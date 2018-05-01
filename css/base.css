@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: -apple-system, sans-serif;
+    text-decoration: none;
+    font-size: 16px;
+    min-width: 320px;
+    line-height: 1.75;
+    overflow-x: hidden;
+    opacity: 1;
+}
+.grid{
+    display: grid;
+}
+.img-responsive{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.display-none{
+    display: none;
+}
+.center{
+    text-align: center;
+}
+.right{
+    text-align: right;
+}
+.italic{
+    font-style: italic;
+}
+.uppercase{
+    text-transform: uppercase;
+}
+.justify-self-end{
+     justify-self: end;
+ }
+.justify-self-start{
+    justify-self: start;
+}
+.justify-self-center{
+    justify-self: center;
+}

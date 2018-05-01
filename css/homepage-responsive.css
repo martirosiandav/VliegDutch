@@ -1,0 +1,352 @@
+/*=========================  Desktop First  =========================*/
+
+/*Extra large devices (large desktops)*/
+/*No media query since the extra-large breakpoint has no upper bound on its width*/
+
+/*Large devices (desktops, less than 1200px)*/
+@media only screen and (max-width : 1200px){
+    .main-header {
+        max-width: 900px;
+    }
+    .about {
+        max-width: 950px;
+        margin-top: 70px;
+    }
+    .about-top > p {
+        max-width: 60%;
+    }
+    .about-bottom div img{
+        max-width: 90%;
+    }
+    .how-it-work-main {
+        max-width: 850px;
+    }
+}
+/*Medium devices (tablets, less than 992px)*/
+@media only screen and (max-width : 992px){
+    .header-top{
+        grid-template-columns: 320px 240px;
+    }
+    .main-header {
+        max-width: 770px;
+        margin-top: 50px;
+    }
+    .main-header-right p:first-of-type {
+        font-size: 2em;
+    }
+    .main-header-right p:last-of-type {
+        font-size: 1.1em;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .main-text {
+        align-self: center;
+    }
+    .social-buttons{
+        grid-gap: 25px;
+    }
+    .service-buttons {
+        align-self: center;
+    }
+    .about {
+        max-width: 750px;
+        margin-top: 50px;
+        grid-row-gap: 45px;
+    }
+    .about-top > p {
+        max-width: 75%;
+    }
+    .border-top{
+        left: 40%;
+        right: 40%;
+    }
+    .about-bottom div img{
+        max-width: 75%;
+    }
+    .about-bottom div h1{
+        font-size: 1.5em;
+    }
+    .travel-ticket-online{
+        font-size: 1.1em;
+        margin: 0;
+    }
+    .how-it-work-main {
+        max-width: 700px;
+    }
+    .how-it-work-main img:nth-of-type(2){
+        max-width: 50%;
+    }
+}
+/*Less than 860px)*/
+@media only screen and (max-width : 860px){
+    .header-top {
+        grid-template-columns: 280px 200px;
+    }
+    .main-header {
+        max-width: 670px;
+    }
+    .main-header-left{
+        align-self: center;
+    }
+    .social-buttons{
+        grid-template-columns: repeat(3, 0.2fr);
+    }
+    .social-buttons a img{
+        max-width: 100%;
+    }
+    .service-buttons img{
+        max-width: 85%;
+    }
+    .about {
+        max-width: 740px;
+        margin-top: 80px;
+    }
+    .about-top > p {
+        max-width: 75%;
+    }
+    .border-top{
+        left: 37%;
+        right: 37%;
+    }
+}
+@media only screen and (max-width : 860px) and (orientation: landscape){
+    footer{
+        height: 130vh;
+    }
+    .footer-content{
+        margin-bottom: 0;
+    }
+}
+/*Small devices (landscape phones, less than 768px)*/
+@media only screen and (max-width : 768px){
+    .header-top {
+        grid-template-columns: 250px 170px;
+        padding: 20px;
+    }
+    .main-header{
+        grid-template-columns: 1fr;
+        grid-row-gap: 20px;
+        margin-top: 0;
+        max-width: 550px;
+    }
+    .main-header-right{
+        padding-left: 0;
+        grid-row: 1 / 2;
+        grid-template-rows: auto;
+        grid-row-gap: 20px;
+    }
+    .main-text{
+        align-self: start;
+        justify-self: center;
+        text-align: center;
+    }
+    .service-buttons {
+        display: none;
+    }
+    .social-buttons {
+        grid-gap: 20px;
+        justify-content: center;
+        grid-template-columns: repeat(6, 0.15fr);
+    }
+    .main-header-left > img{
+        max-width: 60%;
+        margin: auto;
+    }
+    .about {
+        max-width: 550px;
+        grid-template-rows: auto;
+        grid-row-gap: 30px;
+        margin-top: 80px;
+        margin-bottom: 50px;
+    }
+    .about-bottom{
+        display: none
+    }
+    .swiper-container {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    .swiper-slide {
+        flex-direction: column;
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        height: auto !important;
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+    .swiper-button-next{
+        right: 5% !important;
+    }
+    .swiper-button-prev{
+        left: 5% !important;
+    }
+    .travel-ticket-online{
+    font-size: 1.4em;
+    }
+    .about-top > p {
+        max-width: 100%;
+    }
+    .how-it-work div h1{
+        padding: 25px;
+    }
+    .how-it-work-main{
+        max-width: 550px;
+    }
+    .how-it-work-main img:nth-of-type(2) {
+        max-width: 45%;
+    }
+    footer{
+        background-position: 40% center;
+    }
+    .footer-content{
+        margin-bottom: 0;
+    }
+}
+/*Extra small devices (portrait phones, less than 576px)*/
+@media only screen and (max-width: 576px){
+    .header-top {
+        grid-template-columns: 250px 100px;
+    }
+    .faq {
+        justify-self: end;
+    }
+    .language > div > span{
+        display: none;
+    }
+    .language > div {
+        grid-template-columns: auto;
+    }
+    .language > div > img{
+        justify-self: end;
+    }
+    .main-header{
+        width: 100%;
+    }
+    .social-buttons{
+        grid-template-columns: repeat(3, 0.15fr);
+    }
+    .about {
+        width: 90%;
+    }
+    .swiper-slide img {
+        transform: scale(0.8);
+    }
+    .travel-ticket-online{
+        font-size: 1.2em;
+    }
+    .swiper-slide h1{
+    font-size: 1.8em;
+    }
+    .how-it-work-main {
+        width: 90%;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr;
+        grid-row-gap: 20px;
+    }
+    .how-it-work-main > img{
+        max-width: 75%;
+    }
+    .how-it-work-main img:nth-of-type(2) {
+        max-width: 35%;
+    }
+    .how-it-work-text:nth-of-type(2){
+        grid-row: 4/5;
+    }
+}
+@media only screen and (max-width: 480px) and (orientation: landscape){
+    .swiper-slide h1 {
+        font-size: 1.5em;
+    }
+    .travel-ticket-online {
+        font-size: 1.1em;
+    }
+    .how-it-work-main p {
+        font-size: 1.1em;
+    }
+    .footer-content p {
+        font-size: 1.1em;
+    }
+}
+/*Less than 460)*/
+@media only screen and (max-width: 460px){
+    .swiper-slide h1 {
+        font-size: 1.5em;
+    }
+    .travel-ticket-online {
+        font-size: 1.1em;
+    }
+}
+/*Less than 425px)*/
+@media only screen and (max-width: 425px){
+    .header-top {
+        grid-template-columns: repeat(5, 1fr);
+    }
+    .logo{
+        grid-column: 1 / 4;
+    }
+    .header-top-right{
+        grid-column: 5 / 6;
+        grid-column-gap: 5px;
+    }
+    .social-buttons {
+        grid-template-columns: repeat(3, 0.17fr);
+    }
+}
+.swiper-button-prev{
+    left: 1% !important;
+}
+.swiper-button-next{
+    right: 1% !important;
+}
+/*Less than 375px*/
+@media only screen and (max-width : 375px) {
+    .main-header-right p:first-of-type {
+        font-size: 1.7em;
+    }
+    .swiper-slide h1 {
+        font-size: 1.3em;
+    }
+    .travel-ticket-online {
+        font-size: 1em;
+    }
+    .how-it-work div h1 {
+        font-size: 1.7em;
+    }
+    .header-top-right a {
+        font-size: 1em;
+    }
+    .how-it-work-main p {
+        font-size: 1em;
+    }
+    .footer-content {
+        grid-row-gap: 5px;
+    }
+    .footer-content div:last-of-type {
+        grid-template-columns: none;
+        grid-column-gap: 0;
+        grid-row-gap: 5px;
+    }
+    .footer-content p {
+        justify-self: center;
+        font-size: 1.1em;
+    }
+}
+/*Custom, iPhone Retina*/
+@media only screen and (max-width : 320px){
+    .social-buttons {
+        grid-template-columns: repeat(3, 0.19fr);
+    }
+}

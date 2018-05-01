@@ -1,0 +1,115 @@
+/*Media queries that go in the other direction (the given screen size or smaller)*/
+
+
+/*Extra large devices (large desktops)*/
+/*No media query since the extra-large breakpoint has no upper bound on its width*/
+
+/*Large devices (desktops, less than 1200px)*/
+@media (max-width: 1199.98px) {
+    .main {
+        width: 75%;
+    }
+}
+
+/*Medium devices (tablets, less than 992px)*/
+@media (max-width: 991.98px) {
+    .header-top{
+        grid-template-columns: 300px 220px;
+    }
+    header > div > p {
+        font-size: 2.6em;
+    }
+}
+
+/*Small devices (landscape phones, less than 768px)*/
+@media (max-width: 767.98px) {
+    .header-top{
+        grid-template-columns: 270px 170px;
+    }
+    header > div > p {
+        font-size: 2.4em;
+        margin-top: 40px;
+    }
+    .main {
+        margin: 50px auto;
+    }
+}
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+    header {
+        height: 400px;
+    }
+    .header-top {
+        padding: 35px 30px;
+        grid-template-columns: 250px 120px;
+    }
+    .language > div > span{
+        display: none;
+    }
+    .language > div{
+        grid-template-columns: none;
+    }
+    .faq {
+        justify-self: end;
+    }
+    header > div > p {
+        font-size: 2em;
+    }
+    .main {
+        margin: 0 auto;
+    }
+    footer {
+        height: 330px;
+    }
+    .footer-content{
+        margin-bottom: 0;
+    }
+}
+@media (max-width: 499.98px) {
+    .header-top {
+        padding: 35px 20px;
+        grid-template-columns: 250px 80px;
+    }
+    .footer-content div:last-of-type {
+        grid-template-columns: none;
+        grid-column-gap: 0;
+    }
+    .footer-content p {
+        justify-self: center;
+    }
+}
+@media (max-width: 424.98px) {
+    .header-top {
+        grid-template-columns: repeat(5, 1fr);
+    }
+    .logo {
+        grid-column: 1 / 4;
+    }
+    .header-top-right {
+        grid-column: 5 / 6;
+        grid-column-gap: 5px;
+    }
+}
+@media (max-width: 374.98px) {
+    header > div > p {
+        font-size: 1.7em;
+    }
+    .header-top-right a{
+        font-size: 1.1em;
+    }
+}
+
+@media (max-width: 320px) {
+    header > div > p {
+        margin-top: 20px;
+    }
+    .header-top-right a{
+        font-size: 1em;
+    }
+    .footer-content p {
+        font-size: 1.1em;
+    }
+    .footer-content {
+        grid-row-gap: 5px;
+    }
+}

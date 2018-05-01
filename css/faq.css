@@ -1,0 +1,99 @@
+/*HEADER-START*/
+header{
+    height: 550px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+/*HEADER-TOP-START*/
+.header-top{
+    padding: 35px 45px;
+    grid-template-columns: 360px 280px;
+    justify-content: space-between;
+}
+.header-top-right{
+    grid-template-columns: repeat(2, 1fr);
+}
+.header-top-right a, .language > div > span{
+    color: white;
+    font-size: 1.3em;
+    text-decoration: none;
+    font-weight: bold;
+}
+.language{
+    align-items: center;
+}
+.language > div{
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+.language > div > img{
+    justify-self: center;
+}
+.faq{
+    justify-self: start;
+    align-self: center;
+}
+/*HEADER-TOP-END*/
+header > div > p{
+    font-size: 3em;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+    line-height: 1;
+}
+/*HEADER-END*/
+
+/*MAIN-START*/
+.main{
+    max-width: 1000px;
+    margin: 100px auto;
+    grid-template-rows: repeat(4, 1fr);
+    grid-row-gap: 50px;
+}
+select{
+    background: #2196f3;
+    color: white;
+    font-weight: 600;
+    border-radius: 9px;
+    padding: 25px 30px;
+    white-space: pre-line;
+    outline: none;
+    border: none;
+    width: 100%;
+    -webkit-appearance: button;
+    background-image: url(../img/arrow-point-to-right.png);
+    background-position: 97% center;
+    background-repeat: no-repeat;
+}
+/*MAIN-END*/
+
+/*FOOTER-START*/
+footer{
+    height: 480px;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    align-items: end;
+}
+.footer-content{
+    grid-row-gap: 10px;
+    margin-bottom: 30px;
+}
+.footer-content  p{
+    font-size: 1.2em;
+    color: white;
+    margin: 0;
+}
+.footer-content div > a{
+    height: 38px;
+}
+.footer-content div:first-of-type{
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 15px;
+}
+.footer-content div:last-of-type{
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 15px;
+}
+/*FOOTER-END*/
