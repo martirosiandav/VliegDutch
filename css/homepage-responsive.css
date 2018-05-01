@@ -40,13 +40,15 @@
         margin-right: 20px;
     }
     .main-text {
-        align-self: center;
+        -ms-flex-item-align: center;
+            align-self: center;
     }
     .social-buttons{
         grid-gap: 25px;
     }
     .service-buttons {
-        align-self: center;
+        -ms-flex-item-align: center;
+            align-self: center;
     }
     .about {
         max-width: 750px;
@@ -86,7 +88,8 @@
         max-width: 670px;
     }
     .main-header-left{
-        align-self: center;
+        -ms-flex-item-align: center;
+            align-self: center;
     }
     .social-buttons{
         grid-template-columns: repeat(3, 0.2fr);
@@ -136,7 +139,8 @@
         grid-row-gap: 20px;
     }
     .main-text{
-        align-self: start;
+        -ms-flex-item-align: start;
+            align-self: start;
         justify-self: center;
         text-align: center;
     }
@@ -145,7 +149,9 @@
     }
     .social-buttons {
         grid-gap: 20px;
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         grid-template-columns: repeat(6, 0.15fr);
     }
     .main-header-left > img{
@@ -168,7 +174,10 @@
         height: 100%;
     }
     .swiper-slide {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         text-align: center;
         font-size: 18px;
         background: #fff;
@@ -176,15 +185,12 @@
         /* Center slide text vertically */
         display: -webkit-box;
         display: -ms-flexbox;
-        display: -webkit-flex;
         display: flex;
         -webkit-box-pack: center;
         -ms-flex-pack: center;
-        -webkit-justify-content: center;
         justify-content: center;
         -webkit-box-align: center;
         -ms-flex-align: center;
-        -webkit-align-items: center;
         align-items: center;
     }
     .swiper-button-next{
@@ -242,7 +248,8 @@
         width: 90%;
     }
     .swiper-slide img {
-        transform: scale(0.8);
+        -webkit-transform: scale(0.8);
+                transform: scale(0.8);
     }
     .travel-ticket-online{
         font-size: 1.2em;

@@ -9,7 +9,9 @@ header{
 .header-top{
     padding: 35px 45px;
     grid-template-columns: 360px 280px;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 .header-top-right{
     grid-template-columns: repeat(2, 1fr);
@@ -21,18 +23,23 @@ header{
     font-weight: bold;
 }
 .language{
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 .language > div{
     grid-template-columns: repeat(2, 1fr);
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 .language > div > img{
     justify-self: center;
 }
 .faq{
     justify-self: start;
-    align-self: center;
+    -ms-flex-item-align: center;
+        align-self: center;
 }
 /*HEADER-TOP-END*/
 header > div > p{
@@ -74,7 +81,9 @@ footer{
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
-    align-items: end;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
 }
 .footer-content{
     grid-row-gap: 10px;
